@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/biru"
+    android:foregroundGravity="center_vertical"
+    android:foregroundTintMode="add"
+    tools:context=".BerandaFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:src="@drawable/bg_gedung" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_marginLeft="45px"
+        android:layout_marginTop="300px"
+        android:src="@drawable/profile" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45px"
+            android:layout_marginTop="100px"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Hai, Selamat Sore"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300px"
+            android:layout_marginTop="100px"
+            android:fontFamily="@font/poppins"
+            android:text="312110437"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300px"
+            android:fontFamily="@font/poppins"
+            android:text="Rizky Firdaus"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300px"
+            android:fontFamily="@font/poppins"
+            android:text="Teknik Informatika"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape_rounded">
+
+        <ImageButton
+            android:id="@+id/btn_lainya"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/text_nilai"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/btn_kegiatan"
+            android:background="@drawable/rounded_button_white"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_lainya" />
+        q
+
+        <TextView
+            android:id="@+id/text_lainya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_lainya"
+            android:layout_alignStart="@+id/btn_lainya"
+            android:layout_alignEnd="@+id/btn_lainya"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="-20dp"
+            android:fontFamily="@font/poppins"
+            android:text="Lainya"
+            android:textColor="@color/biru"
+            android:textSize="10sp" />
+
+        <ImageButton
+            android:id="@+id/btn_kegiatan"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/text_pembayaran"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/btn_prestasi"
+            android:background="@drawable/rounded_button_white"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_kegiatan" />
+
+        <TextView
+            android:id="@+id/text_kegitan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_kegiatan"
+            android:layout_alignStart="@+id/btn_kegiatan"
+            android:layout_alignEnd="@+id/btn_kegiatan"
+            android:layout_marginStart="-10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="-20dp"
+            android:fontFamily="@font/poppins"
+            android:text="Form kegiatan"
+            android:textColor="@color/biru"
+            android:textSize="10sp" />
+
+        <ImageButton
+            android:id="@+id/btn_prestasi"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/text_pengumuman"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/btn_krs"
+            android:background="@drawable/rounded_button_white"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_prestasi" />
+
+        <TextView
+            android:id="@+id/text_prestasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_prestasi"
+            android:layout_alignStart="@+id/btn_prestasi"
+            android:layout_alignEnd="@+id/btn_prestasi"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="-20dp"
+            android:fontFamily="@font/poppins"
+            android:text="Prestasi"
+            android:textColor="@color/biru"
+            android:textSize="10sp" />
+
+        <ImageButton
+            android:id="@+id/btn_krs"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/text_elearning"
+            android:layout_alignStart="@+id/btn_elearning"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_button_white"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_krs" />
+
+        <TextView
+            android:id="@+id/text_KRS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_krs"
+            android:layout_alignStart="@+id/btn_krs"
+            android:layout_alignEnd="@+id/btn_krs"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins"
+            android:text="KRS"
+            android:textColor="@color/biru"
+            android:textSize="10sp" />
+
+        <ImageButton
+            android:id="@+id/btn_nilai"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_toEndOf="@+id/btn_pembayaran"
+            android:background="@drawable/rounded_button_white"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_nilai" />
+
+        <TextView
+            android:id="@+id/text_nilai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_nilai"
+            android:layout_alignStart="@+id/btn_nilai"
+            android:layout_alignEnd="@+id/btn_nilai"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins"
+            android:text="Nilai"
+            android:textColor="@color/biru"
+            android:textSize="10sp" />
+
+        <ImageButton
+            android:id="@+id/btn_pembayaran"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_toEndOf="@+id/btn_pengumuman"
+            android:background="@drawable/rounded_button_white"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_pembayaran" />
+
+        <TextView
+            android:id="@+id/text_pembayaran"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_pembayaran"
+            android:layout_alignStart="@+id/btn_pembayaran"
+            android:layout_alignEnd="@+id/btn_pembayaran"
+            android:layout_marginStart="-8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="-20dp"
+            android:fontFamily="@font/poppins"
+            android:text="Pembayaran"
+            android:textColor="@color/biru"
+            android:textSize="10sp" />
+
+        <ImageButton
+            android:id="@+id/btn_pengumuman"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_toEndOf="@+id/btn_elearning"
+            android:background="@drawable/rounded_button_white"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_pengumuman" />
+
+        <TextView
+            android:id="@+id/text_pengumuman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_pengumuman"
+            android:layout_alignStart="@+id/btn_pengumuman"
+            android:layout_alignEnd="@+id/btn_pengumuman"
+            android:layout_marginStart="-10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="-20dp"
+            android:fontFamily="@font/poppins"
+            android:text="Pengumuman"
+            android:textColor="@color/biru"
+            android:textSize="10sp" />
+
+        <ImageButton
+            android:id="@+id/btn_elearning"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/rounded_button_white"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_elearning" />
+
+        <TextView
+            android:id="@+id/text_elearning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_elearning"
+            android:layout_alignStart="@+id/btn_elearning"
+            android:layout_alignEnd="@+id/btn_elearning"
+            android:layout_marginStart="-1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="-10dp"
+            android:fontFamily="@font/poppins"
+            android:text="E-Learning"
+            android:textColor="@color/biru"
+            android:textSize="10sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_KRS"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Pengumunan :"
+                android:textColor="@color/biru"></TextView>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="275dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/rounded_button_white">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="10dp"
+                            android:paddingRight="20dp"
+                            android:text="Pengumuman Kegitan Perkuliahan pada hari sabtu Tanggal 8 Oktober 2022"
+                            android:textColor="@color/black">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|right"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:paddingRight="15dp"
+                            android:paddingBottom="5dp"
+                            android:text=" Lanjut >"
+                            android:textAllCaps="false"
+                            android:textColor="@color/biru"
+                            android:textSize="12sp">
+
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="275dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/rounded_button_white">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="10dp"
+                            android:paddingRight="20dp"
+                            android:text="Pengumuman Kegitan Perkuliahan pada hari sabtu Tanggal 8 Oktober 2022"
+                            android:textColor="@color/black">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|right"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:paddingRight="15dp"
+                            android:paddingBottom="5dp"
+                            android:text=" Lanjut >"
+                            android:textAllCaps="false"
+                            android:textColor="@color/biru"
+                            android:textSize="12sp">
+
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="275dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/rounded_button_white">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="10dp"
+                            android:paddingRight="20dp"
+                            android:text="Pengumuman Kegitan Perkuliahan pada hari sabtu Tanggal 8 Oktober 2022"
+                            android:textColor="@color/black">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|right"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:paddingRight="15dp"
+                            android:paddingBottom="5dp"
+                            android:text=" Lanjut >"
+                            android:textAllCaps="false"
+                            android:textColor="@color/biru"
+                            android:textSize="12sp">
+
+                        </TextView>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
