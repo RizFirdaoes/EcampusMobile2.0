@@ -27,6 +27,7 @@
         </activity>
         <activity
             android:name=".beranda_activity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
@@ -34,6 +35,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:exported="true">
 
 
