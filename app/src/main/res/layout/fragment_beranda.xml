@@ -56,6 +56,7 @@
                 android:id="@+id/textView9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
                 android:gravity="center_horizontal|left"
                 android:text="Universitas Pelita Bangsa"
                 android:textColor="#FFFFFF"
@@ -394,12 +395,14 @@
 
                         <TextView
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_height="70dp"
+                            android:fontFamily="@font/poppins"
                             android:paddingLeft="20dp"
                             android:paddingTop="10dp"
                             android:paddingRight="20dp"
-                            android:text="Pengumuman Kegitan Perkuliahan pada hari sabtu Tanggal 8 Oktober 2022"
-                            android:textColor="@color/black">
+                            android:text="Pengumuman tentang Bantuan Beasiswa Pemerintah Kota Bekasi"
+                            android:textColor="@color/black"
+                            android:textSize="13sp">
 
                         </TextView>
 
@@ -427,12 +430,14 @@
 
                         <TextView
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_height="70dp"
+                            android:fontFamily="@font/poppins"
                             android:paddingLeft="20dp"
                             android:paddingTop="10dp"
                             android:paddingRight="20dp"
-                            android:text="Pengumuman Kegitan Perkuliahan pada hari sabtu Tanggal 8 Oktober 2022"
-                            android:textColor="@color/black">
+                            android:text="Pengumuman UTS Semester Ganjil TA 2022/2023 Fakultas Teknik"
+                            android:textColor="@color/black"
+                            android:textSize="13sp">
 
                         </TextView>
 
@@ -460,12 +465,14 @@
 
                         <TextView
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_height="70dp"
+                            android:fontFamily="@font/poppins"
                             android:paddingLeft="20dp"
                             android:paddingTop="10dp"
                             android:paddingRight="20dp"
                             android:text="Pengumuman Kegitan Perkuliahan pada hari sabtu Tanggal 8 Oktober 2022"
-                            android:textColor="@color/black">
+                            android:textColor="@color/black"
+                            android:textSize="13sp">
 
                         </TextView>
 
