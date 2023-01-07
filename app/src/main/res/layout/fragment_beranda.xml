@@ -155,7 +155,7 @@
             android:padding="10dp"
             android:scaleType="fitCenter"
             android:src="@drawable/icon_lainya" />
-        q
+
 
         <TextView
             android:id="@+id/text_lainya"
