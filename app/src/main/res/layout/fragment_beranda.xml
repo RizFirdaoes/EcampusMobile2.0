@@ -10,6 +10,8 @@
     tools:context=".BerandaFragment">
 
     <!-- TODO: Update blank fragment layout -->
+
+
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="wrap_content"
@@ -70,6 +72,7 @@
         </LinearLayout>
 
     </LinearLayout>
+
 
     <LinearLayout
         android:layout_below="@+id/layoutAtas"
@@ -137,363 +140,722 @@
 
     </LinearLayout>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="450dp"
-        android:layout_alignParentBottom="true"
-        android:background="@drawable/shape_rounded">
 
-        <ImageButton
-            android:id="@+id/btn_lainya"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_below="@+id/text_nilai"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="10dp"
-            android:layout_toEndOf="@+id/btn_kegiatan"
-            android:background="@drawable/rounded_button_white"
-            android:padding="10dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/icon_lainya" />
-
-
-        <TextView
-            android:id="@+id/text_lainya"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/btn_lainya"
-            android:layout_alignStart="@+id/btn_lainya"
-            android:layout_alignEnd="@+id/btn_lainya"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="-20dp"
-            android:fontFamily="@font/poppins"
-            android:text="Lainya"
-            android:textColor="@color/biru"
-            android:textSize="10sp" />
-
-        <ImageButton
-            android:id="@+id/btn_kegiatan"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_below="@+id/text_pembayaran"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="10dp"
-            android:layout_toEndOf="@+id/btn_prestasi"
-            android:background="@drawable/rounded_button_white"
-            android:padding="10dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/icon_kegiatan" />
-
-        <TextView
-            android:id="@+id/text_kegitan"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/btn_kegiatan"
-            android:layout_alignStart="@+id/btn_kegiatan"
-            android:layout_alignEnd="@+id/btn_kegiatan"
-            android:layout_marginStart="-10dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="-20dp"
-            android:fontFamily="@font/poppins"
-            android:text="Form kegiatan"
-            android:textColor="@color/biru"
-            android:textSize="10sp" />
-
-        <ImageButton
-            android:id="@+id/btn_prestasi"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_below="@+id/text_pengumuman"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="10dp"
-            android:layout_toEndOf="@+id/btn_krs"
-            android:background="@drawable/rounded_button_white"
-            android:padding="10dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/icon_prestasi" />
-
-        <TextView
-            android:id="@+id/text_prestasi"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/btn_prestasi"
-            android:layout_alignStart="@+id/btn_prestasi"
-            android:layout_alignEnd="@+id/btn_prestasi"
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="-20dp"
-            android:fontFamily="@font/poppins"
-            android:text="Prestasi"
-            android:textColor="@color/biru"
-            android:textSize="10sp" />
-
-        <ImageButton
-            android:id="@+id/btn_krs"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_below="@+id/text_elearning"
-            android:layout_alignStart="@+id/btn_elearning"
-            android:layout_marginStart="0dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/rounded_button_white"
-            android:padding="10dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/icon_krs" />
-
-        <TextView
-            android:id="@+id/text_KRS"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/btn_krs"
-            android:layout_alignStart="@+id/btn_krs"
-            android:layout_alignEnd="@+id/btn_krs"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="5dp"
-            android:fontFamily="@font/poppins"
-            android:text="KRS"
-            android:textColor="@color/biru"
-            android:textSize="10sp" />
-
-        <ImageButton
-            android:id="@+id/btn_nilai"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="40dp"
-            android:layout_toEndOf="@+id/btn_pembayaran"
-            android:background="@drawable/rounded_button_white"
-            android:padding="10dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/icon_nilai" />
-
-        <TextView
-            android:id="@+id/text_nilai"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/btn_nilai"
-            android:layout_alignStart="@+id/btn_nilai"
-            android:layout_alignEnd="@+id/btn_nilai"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="5dp"
-            android:fontFamily="@font/poppins"
-            android:text="Nilai"
-            android:textColor="@color/biru"
-            android:textSize="10sp" />
-
-        <ImageButton
-            android:id="@+id/btn_pembayaran"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="40dp"
-            android:layout_toEndOf="@+id/btn_pengumuman"
-            android:background="@drawable/rounded_button_white"
-            android:padding="10dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/icon_pembayaran" />
-
-        <TextView
-            android:id="@+id/text_pembayaran"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/btn_pembayaran"
-            android:layout_alignStart="@+id/btn_pembayaran"
-            android:layout_alignEnd="@+id/btn_pembayaran"
-            android:layout_marginStart="-8dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="-20dp"
-            android:fontFamily="@font/poppins"
-            android:text="Pembayaran"
-            android:textColor="@color/biru"
-            android:textSize="10sp" />
-
-        <ImageButton
-            android:id="@+id/btn_pengumuman"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="40dp"
-            android:layout_toEndOf="@+id/btn_elearning"
-            android:background="@drawable/rounded_button_white"
-            android:padding="10dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/icon_pengumuman" />
-
-        <TextView
-            android:id="@+id/text_pengumuman"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/btn_pengumuman"
-            android:layout_alignStart="@+id/btn_pengumuman"
-            android:layout_alignEnd="@+id/btn_pengumuman"
-            android:layout_marginStart="-10dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="-20dp"
-            android:fontFamily="@font/poppins"
-            android:text="Pengumuman"
-            android:textColor="@color/biru"
-            android:textSize="10sp" />
-
-        <ImageButton
-            android:id="@+id/btn_elearning"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="35dp"
-            android:layout_marginTop="40dp"
-            android:background="@drawable/rounded_button_white"
-            android:padding="10dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/icon_elearning" />
-
-        <TextView
-            android:id="@+id/text_elearning"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/btn_elearning"
-            android:layout_alignStart="@+id/btn_elearning"
-            android:layout_alignEnd="@+id/btn_elearning"
-            android:layout_marginStart="-1dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="-10dp"
-            android:fontFamily="@font/poppins"
-            android:text="E-Learning"
-            android:textColor="@color/biru"
-            android:textSize="10sp" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/text_KRS"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="15dp"
-            android:orientation="vertical">
-
-            <TextView
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:fontFamily="@font/poppins_semibold"
-                android:text="Pengumunan :"
-                android:textColor="@color/biru"></TextView>
+                android:layout_height="450dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/shape_rounded">
 
-            <HorizontalScrollView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+
+                <ScrollView
+                    android:layout_marginTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="vertical">
 
-                    <LinearLayout
-                        android:orientation="vertical"
-                        android:layout_width="275dp"
-                        android:layout_height="100dp"
-                        android:layout_marginLeft="10dp"
-                        android:background="@drawable/rounded_button_white">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="70dp"
-                            android:fontFamily="@font/poppins"
-                            android:paddingLeft="20dp"
-                            android:paddingTop="10dp"
-                            android:paddingRight="20dp"
-                            android:text="Pengumuman tentang Bantuan Beasiswa Pemerintah Kota Bekasi"
-                            android:textColor="@color/black"
-                            android:textSize="13sp">
 
-                        </TextView>
 
-                        <TextView
-                            android:layout_width="wrap_content"
+                <ImageButton
+                    android:id="@+id/btn_lainya"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/text_nilai"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@+id/btn_kegiatan"
+                    android:background="@drawable/rounded_button_white"
+                    android:padding="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icon_lainya" />
+
+
+                <TextView
+                    android:id="@+id/text_lainya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_lainya"
+                    android:layout_alignStart="@+id/btn_lainya"
+                    android:layout_alignEnd="@+id/btn_lainya"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="-20dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Lainya"
+                    android:textColor="@color/biru"
+                    android:textSize="10sp" />
+
+                <ImageButton
+                    android:id="@+id/btn_kegiatan"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/text_pembayaran"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@+id/btn_prestasi"
+                    android:background="@drawable/rounded_button_white"
+                    android:padding="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icon_kegiatan" />
+
+                <TextView
+                    android:id="@+id/text_kegitan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_kegiatan"
+                    android:layout_alignStart="@+id/btn_kegiatan"
+                    android:layout_alignEnd="@+id/btn_kegiatan"
+                    android:layout_marginStart="-10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="-20dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Form kegiatan"
+                    android:textColor="@color/biru"
+                    android:textSize="10sp" />
+
+                <ImageButton
+                    android:id="@+id/btn_prestasi"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/text_pengumuman"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@+id/btn_krs"
+                    android:background="@drawable/rounded_button_white"
+                    android:padding="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icon_prestasi" />
+
+                <TextView
+                    android:id="@+id/text_prestasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_prestasi"
+                    android:layout_alignStart="@+id/btn_prestasi"
+                    android:layout_alignEnd="@+id/btn_prestasi"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="-20dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Prestasi"
+                    android:textColor="@color/biru"
+                    android:textSize="10sp" />
+
+                <ImageButton
+                    android:id="@+id/btn_krs"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/text_elearning"
+                    android:layout_alignStart="@+id/btn_elearning"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_button_white"
+                    android:padding="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icon_krs" />
+
+                <TextView
+                    android:id="@+id/text_KRS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_krs"
+                    android:layout_alignStart="@+id/btn_krs"
+                    android:layout_alignEnd="@+id/btn_krs"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Tugas"
+                    android:textColor="@color/biru"
+                    android:textSize="10sp" />
+
+                <ImageButton
+                    android:id="@+id/btn_nilai"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/btn_pembayaran"
+                    android:background="@drawable/rounded_button_white"
+                    android:padding="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icon_nilai" />
+
+                <TextView
+                    android:id="@+id/text_nilai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_nilai"
+                    android:layout_alignStart="@+id/btn_nilai"
+                    android:layout_alignEnd="@+id/btn_nilai"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Nilai"
+                    android:textColor="@color/biru"
+                    android:textSize="10sp" />
+
+                <ImageButton
+                    android:id="@+id/btn_pembayaran"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/btn_pengumuman"
+                    android:background="@drawable/rounded_button_white"
+                    android:padding="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icon_pembayaran" />
+
+                <TextView
+                    android:id="@+id/text_pembayaran"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_pembayaran"
+                    android:layout_alignStart="@+id/btn_pembayaran"
+                    android:layout_alignEnd="@+id/btn_pembayaran"
+                    android:layout_marginStart="-8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="-20dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Pembayaran"
+                    android:textColor="@color/biru"
+                    android:textSize="10sp" />
+
+                <ImageButton
+                    android:id="@+id/btn_pengumuman"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/btn_elearning"
+                    android:background="@drawable/rounded_button_white"
+                    android:padding="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icon_pengumuman" />
+
+                <TextView
+                    android:id="@+id/text_pengumuman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_pengumuman"
+                    android:layout_alignStart="@+id/btn_pengumuman"
+                    android:layout_alignEnd="@+id/btn_pengumuman"
+                    android:layout_marginStart="-10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="-20dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Pengumuman"
+                    android:textColor="@color/biru"
+                    android:textSize="10sp" />
+
+                <ImageButton
+                    android:id="@+id/btn_elearning"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_button_white"
+                    android:padding="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icon_elearning" />
+
+                <TextView
+                    android:id="@+id/text_elearning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_elearning"
+                    android:layout_alignStart="@+id/btn_elearning"
+                    android:layout_alignEnd="@+id/btn_elearning"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="-10dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Materi"
+                    android:textColor="@color/biru"
+                    android:textSize="10sp" />
+
+                <LinearLayout
+                    android:id="@+id/scrollhorizon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_KRS"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Pengumunan :"
+                        android:textColor="@color/biru"></TextView>
+
+                    <HorizontalScrollView
+                        android:layout_width="360dp"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="bottom|right"
-                            android:fontFamily="@font/poppins_semibold"
-                            android:paddingRight="15dp"
-                            android:paddingBottom="5dp"
-                            android:text=" Lanjut >"
-                            android:textAllCaps="false"
-                            android:textColor="@color/biru"
-                            android:textSize="12sp">
+                            android:orientation="horizontal">
 
-                        </TextView>
-                    </LinearLayout>
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="275dp"
+                                android:layout_height="100dp"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/rounded_button_white">
 
-                    <LinearLayout
-                        android:orientation="vertical"
-                        android:layout_width="275dp"
-                        android:layout_height="100dp"
-                        android:layout_marginLeft="10dp"
-                        android:background="@drawable/rounded_button_white">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="70dp"
+                                    android:fontFamily="@font/poppins"
+                                    android:paddingLeft="20dp"
+                                    android:paddingTop="10dp"
+                                    android:paddingRight="20dp"
+                                    android:text="Pengumuman tentang Bantuan Beasiswa Pemerintah Kota Bekasi"
+                                    android:textColor="@color/black"
+                                    android:textSize="13sp">
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="70dp"
-                            android:fontFamily="@font/poppins"
-                            android:paddingLeft="20dp"
-                            android:paddingTop="10dp"
-                            android:paddingRight="20dp"
-                            android:text="Pengumuman UTS Semester Ganjil TA 2022/2023 Fakultas Teknik"
-                            android:textColor="@color/black"
-                            android:textSize="13sp">
+                                </TextView>
 
-                        </TextView>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="bottom|right"
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:paddingRight="15dp"
+                                    android:paddingBottom="5dp"
+                                    android:text=" Lanjut >"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/biru"
+                                    android:textSize="12sp">
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="bottom|right"
-                            android:fontFamily="@font/poppins_semibold"
-                            android:paddingRight="15dp"
-                            android:paddingBottom="5dp"
-                            android:text=" Lanjut >"
-                            android:textAllCaps="false"
-                            android:textColor="@color/biru"
-                            android:textSize="12sp">
+                                </TextView>
+                            </LinearLayout>
 
-                        </TextView>
-                    </LinearLayout>
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="275dp"
+                                android:layout_height="100dp"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/rounded_button_white">
 
-                    <LinearLayout
-                        android:orientation="vertical"
-                        android:layout_width="275dp"
-                        android:layout_height="100dp"
-                        android:layout_marginLeft="10dp"
-                        android:background="@drawable/rounded_button_white">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="70dp"
+                                    android:fontFamily="@font/poppins"
+                                    android:paddingLeft="20dp"
+                                    android:paddingTop="10dp"
+                                    android:paddingRight="20dp"
+                                    android:text="Pengumuman UTS Semester Ganjil TA 2022/2023 Fakultas Teknik"
+                                    android:textColor="@color/black"
+                                    android:textSize="13sp">
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="70dp"
-                            android:fontFamily="@font/poppins"
-                            android:paddingLeft="20dp"
-                            android:paddingTop="10dp"
-                            android:paddingRight="20dp"
-                            android:text="Pengumuman Kegitan Perkuliahan pada hari sabtu Tanggal 8 Oktober 2022"
-                            android:textColor="@color/black"
-                            android:textSize="13sp">
+                                </TextView>
 
-                        </TextView>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="bottom|right"
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:paddingRight="15dp"
+                                    android:paddingBottom="5dp"
+                                    android:text=" Lanjut >"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/biru"
+                                    android:textSize="12sp">
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="bottom|right"
-                            android:fontFamily="@font/poppins_semibold"
-                            android:paddingRight="15dp"
-                            android:paddingBottom="5dp"
-                            android:text=" Lanjut >"
-                            android:textAllCaps="false"
-                            android:textColor="@color/biru"
-                            android:textSize="12sp">
+                                </TextView>
+                            </LinearLayout>
 
-                        </TextView>
-                    </LinearLayout>
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="275dp"
+                                android:layout_height="100dp"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/rounded_button_white">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="70dp"
+                                    android:fontFamily="@font/poppins"
+                                    android:paddingLeft="20dp"
+                                    android:paddingTop="10dp"
+                                    android:paddingRight="20dp"
+                                    android:text="Pengumuman Kegitan Perkuliahan pada hari sabtu Tanggal 8 Oktober 2022"
+                                    android:textColor="@color/black"
+                                    android:textSize="13sp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="bottom|right"
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:paddingRight="15dp"
+                                    android:paddingBottom="5dp"
+                                    android:text=" Lanjut >"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/biru"
+                                    android:textSize="12sp">
+
+                                </TextView>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
 
                 </LinearLayout>
-            </HorizontalScrollView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/scrollhorizon"
+                    android:layout_marginTop="15dp">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Jadwal Hari Ini :"
+                        android:textColor="@color/biru"></TextView>
+                    <LinearLayout
+                        android:layout_width="350dp"
+                        android:layout_height="170dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/rounded_button_white"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_bold"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="10dp"
+                            android:paddingRight="20dp"
+                            android:text="Probabilitas dan statistika"
+                            android:textColor="@color/biru"
+                            android:textSize="14sp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="5dp"
+                            android:paddingRight="20dp"
+                            android:text="Dr. Purwanto, S.T, M.M"
+                            android:textColor="@color/black"
+                            android:textSize="13sp"></TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="5dp"
+                            android:paddingRight="20dp"
+                            android:text="Minggu,8 Jan 2023 | 07.00 s.d 09.30"
+                            android:textColor="@color/black"
+                            android:textSize="13sp"></TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="5dp"
+                            android:paddingRight="20dp"
+                            android:text="Ruang B139"
+                            android:textColor="@color/black"
+                            android:textSize="13sp"></TextView>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="15dp">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/online_icon"></ImageView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="5dp"
+                                android:text="online"
+                                android:textColor="@color/biru"
+                                android:textSize="13sp"></TextView>
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="20dp"
+                                android:src="@drawable/diskusi_icon">
+                            </ImageView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="5dp"
+                                android:text="Diskusi"
+                                android:textColor="@color/biru"
+                                android:textSize="13sp">
+                            </TextView>
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="20dp"
+                                android:src="@drawable/materi_icon">
+                            </ImageView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="5dp"
+                                android:text="materi"
+                                android:textColor="@color/biru"
+                                android:textSize="13sp">
+                            </TextView>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="350dp"
+                        android:layout_height="170dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/rounded_button_white"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_bold"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="10dp"
+                            android:paddingRight="20dp"
+                            android:text="Probabilitas dan statistika"
+                            android:textColor="@color/biru"
+                            android:textSize="14sp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="5dp"
+                            android:paddingRight="20dp"
+                            android:text="Dr. Purwanto, S.T, M.M"
+                            android:textColor="@color/black"
+                            android:textSize="13sp"></TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="5dp"
+                            android:paddingRight="20dp"
+                            android:text="Minggu,8 Jan 2023 | 07.00 s.d 09.30"
+                            android:textColor="@color/black"
+                            android:textSize="13sp"></TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="5dp"
+                            android:paddingRight="20dp"
+                            android:text="Ruang B139"
+                            android:textColor="@color/black"
+                            android:textSize="13sp"></TextView>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="15dp">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/online_icon"></ImageView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="5dp"
+                                android:text="online"
+                                android:textColor="@color/biru"
+                                android:textSize="13sp"></TextView>
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="20dp"
+                                android:src="@drawable/diskusi_icon">
+                            </ImageView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="5dp"
+                                android:text="Diskusi"
+                                android:textColor="@color/biru"
+                                android:textSize="13sp">
+                            </TextView>
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="20dp"
+                                android:src="@drawable/materi_icon">
+                            </ImageView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="5dp"
+                                android:text="materi"
+                                android:textColor="@color/biru"
+                                android:textSize="13sp">
+                            </TextView>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="350dp"
+                        android:layout_height="170dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/rounded_button_white"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_bold"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="10dp"
+                            android:paddingRight="20dp"
+                            android:text="Probabilitas dan statistika"
+                            android:textColor="@color/biru"
+                            android:textSize="14sp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="5dp"
+                            android:paddingRight="20dp"
+                            android:text="Dr. Purwanto, S.T, M.M"
+                            android:textColor="@color/black"
+                            android:textSize="13sp"></TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="5dp"
+                            android:paddingRight="20dp"
+                            android:text="Minggu,8 Jan 2023 | 07.00 s.d 09.30"
+                            android:textColor="@color/black"
+                            android:textSize="13sp"></TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="5dp"
+                            android:paddingRight="20dp"
+                            android:text="Ruang B139"
+                            android:textColor="@color/black"
+                            android:textSize="13sp"></TextView>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="15dp">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/online_icon"></ImageView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="5dp"
+                                android:text="online"
+                                android:textColor="@color/biru"
+                                android:textSize="13sp"></TextView>
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="20dp"
+                                android:src="@drawable/diskusi_icon">
+                            </ImageView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="5dp"
+                                android:text="Diskusi"
+                                android:textColor="@color/biru"
+                                android:textSize="13sp">
+                            </TextView>
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="20dp"
+                                android:src="@drawable/materi_icon">
+                            </ImageView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="5dp"
+                                android:text="materi"
+                                android:textColor="@color/biru"
+                                android:textSize="13sp">
+                            </TextView>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+          </RelativeLayout>
         </LinearLayout>
-    </RelativeLayout>
+   </ScrollView>
+
+ </RelativeLayout>
+
+
+
+
 
 </RelativeLayout>
